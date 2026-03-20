@@ -164,14 +164,13 @@ Perplexity (inability to understand) is a measure of how "surprised" a language 
 ![alt text](images/llm-architecture/slide_24.jpg)
 
 - **Unigram Model**: Assumes each word is independent, calculating the total probability as the product of the individual probability of every word in the sequence:
-  $$
+  ```math
   P(w_1w_2...w_n) \approx \prod_{i} P(w_i)
-  $$
+
 
 - **Bigram Model**: Follows a first-order Markov assumption, where the probability of a word depends only on the single word immediately preceding it:
-  $$
+  ```math
   P(w_{1:n}) \approx \prod_{k=1}^{n} P(w_k|w_{k-1})
-  $$
 
 ## ROC AUC - Receiver Operating Characteristic - Area Under Curve
 
