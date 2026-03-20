@@ -193,4 +193,4 @@ The diagram illustrates the shift from writing a better "question" to building a
 
 ***
 
-### 👉 Next: [LLM Architecture](../2_LLM_Architecture/AI_and_LLM_Intro.md)
+### 👉 Next: [LLM Architecture - AI and LLM Intro](../2_LLM_Architecture/AI_and_LLM_Intro.md)

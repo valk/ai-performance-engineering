@@ -18,6 +18,14 @@ Explore how to transition from raw machine learning models to functional AI-driv
 
 ### 2. LLM Architecture
 Deep dive into the underlying architecture of modern LLMs.
+    
+*   [LLM Architecture - AI and LLM Intro](2_LLM_Architecture/AI_and_LLM_Intro.md)
+    - Intro and Generative Al Landscape
+    - Types of ML
+    - Supervised Tasks Evaluation
+    - Language Models
+    - N-Gram LM
+    - Language Models Evaluation
 
 ### 3. MLOps
 Best practices for deploying, monitoring, and maintaining machine learning models in production.
