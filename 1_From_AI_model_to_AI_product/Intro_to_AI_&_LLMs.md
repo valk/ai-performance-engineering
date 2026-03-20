@@ -190,3 +190,7 @@ The diagram illustrates the shift from writing a better "question" to building a
 - Use English for prompts (more fits into context window, better performance, less expensive)
 - Use RAG extensively to improve accuracy and reduce hallucinations
 - Use tools for complex tasks
+
+***
+
+### 👉 Next: [LLM Architecture](../2_LLM_Architecture/AI_and_LLM_Intro.md)
