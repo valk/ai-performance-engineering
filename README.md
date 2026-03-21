@@ -35,3 +35,7 @@ Techniques for optimizing model inference, reducing latency, and managing comput
 
 ### 5. AI Model Finetuning with RL
 Advanced topics in model refinement using Reinforcement Learning.
+
+## Colabs
+
+- [LLM Architecture - AI and LLM Intro](https://colab.research.google.com/drive/1QhgH6HqXerRrHBElhTeJqwNamG9fE_NW?usp=sharing)
