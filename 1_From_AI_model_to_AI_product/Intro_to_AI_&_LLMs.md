@@ -193,4 +193,6 @@ The diagram illustrates the shift from writing a better "question" to building a
 
 ***
 
-### 👉 Next: [LLM Architecture - AI and LLM Intro](../2_LLM_Architecture/AI_and_LLM_Intro.md)
+### 👉 Next in module: [Evaluation_&_Benchmarks](Evaluation_&_Benchmarks.md)
+
+### 👉 Next in chronological order: [LLM Architecture - AI and LLM Intro](../2_LLM_Architecture/AI_and_LLM_Intro.md)
