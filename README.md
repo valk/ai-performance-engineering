@@ -16,6 +16,17 @@ Explore how to transition from raw machine learning models to functional AI-driv
     *   Prompt and Context engineering techniques, including Zero-shot, Few-shot, and Chain-of-Thought prompting.
     *   Practical insights into tool use and function calling.
 
+*   **[Evaluation & Benchmarks](1_From_AI_model_to_AI_product/Evaluation_&_Benchmarks.md)**: An essential introduction to the landscape of Large Language Models. This module covers:
+    *   Why LLM evaluation is hard
+    *   Evaluation metrics
+    *   Evaluation-Driven Development (EDD) - the mindset
+    *   Common metrics and where they break
+    *   Common benchmarks and their expiration dates
+    *   LLM-as-a-Judge and automated behavioral evals (Anthropic's Bloom)
+    *   Human evaluation
+    *   EDD in practice: turning metrics into decisions
+
+
 ### 2. LLM Architecture
 Deep dive into the underlying architecture of modern LLMs.
     
