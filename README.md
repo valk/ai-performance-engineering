@@ -38,6 +38,10 @@ Deep dive into the underlying architecture of modern LLMs.
     - N-Gram LM
     - Language Models Evaluation
 
+* [AI Model Training](2_LLM_Architecture/AI_Model_Training.md)
+    - 
+    
+
 ### 3. MLOps
 Best practices for deploying, monitoring, and maintaining machine learning models in production.
 

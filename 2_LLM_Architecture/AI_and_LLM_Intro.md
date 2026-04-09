@@ -177,3 +177,7 @@ Perplexity (inability to understand) is a measure of how "surprised" a language 
 ![alt text](images/llm-architecture/slide_29.jpg)
 
 - Key insight: The larger the Area Under the Curve (AUC), the more capable the model is at separating the two classes.
+
+***
+
+### 👉 Next in module: [AI Model Training](AI_Model_Training.md)

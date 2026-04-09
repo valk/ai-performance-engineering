@@ -120,3 +120,7 @@ Categorize *why* it failed to prioritize engineering efforts.
 * Progress must be both **statistically real** (via Bootstrapping) and **practically meaningful** (via Slicing).
 * **Every eval should inform a concrete next action.**
 * If your eval suite doesn’t change as your model improves, your model will outgrow it.
+
+***
+
+### 👉 Next in chronological order: [AI Model Training](../2_LLM_Architecture/AI_Model_Training.md)
