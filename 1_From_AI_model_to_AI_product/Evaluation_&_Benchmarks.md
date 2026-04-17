@@ -124,3 +124,5 @@ Categorize *why* it failed to prioritize engineering efforts.
 ***
 
 ### 👉 Next in chronological order: [AI Model Training](../2_LLM_Architecture/AI_Model_Training.md)
+
+### 👉 Next in module: [AI_Systems_&_Test-Time_Compute](../1_From_AI_model_to_AI_product/AI_Systems_&_Test-Time_Compute.md)

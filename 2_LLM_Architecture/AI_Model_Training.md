@@ -86,3 +86,9 @@ LLM Specific Benchmarks
 * Perplexity: Measures how well the model predicts a test corpus.
 * MMLU: Multiple-choice questions across STEM, humanities, and social sciences.
 * Humanity's Last Exam: Extremely difficult advanced science questions where current models score ~40%.
+
+***
+
+### 👉 Next in chronological order: [AI Systems & Test-Time Compute](../1_From_AI_model_to_AI_product/AI_Systems_&_Test-Time_Compute.md)
+
+### 👉 Next in module: [Neural Networks and Learned Representations](../2_LLM_Architecture/Neural_Networks_and_Learned_Representations.md)

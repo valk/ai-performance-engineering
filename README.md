@@ -26,6 +26,13 @@ Explore how to transition from raw machine learning models to functional AI-driv
     *   Human evaluation
     *   EDD in practice: turning metrics into decisions
 
+* [AI Systems & Test-Time Compute](1_From_AI_model_to_AI_product/AI_Systems_&_Test-Time_Compute.md)
+    - Fine-Tuning vs Retrieval Augmented Generation (RAG)
+    - The RAG Pipeline Components
+    - Chunking and Embedding strategies
+    - Evaluating RAG Systems and the "RAG Triad"
+    - Evaluation Datasets and Benchmarks
+
 
 ### 2. LLM Architecture
 Deep dive into the underlying architecture of modern LLMs.
@@ -39,7 +46,16 @@ Deep dive into the underlying architecture of modern LLMs.
     - Language Models Evaluation
 
 * [AI Model Training](2_LLM_Architecture/AI_Model_Training.md)
-    - 
+    - Core Terminology & Hierarchy
+    - Language Model Architectures
+    - Optimization & Regularization
+    - Evaluation & Benchmarks
+
+* [Neural Networks and Learned Representations](2_LLM_Architecture/Neural_Networks_and_Learned_Representations.md)
+    - Neural Networks and Multi-Layer Perceptrons (MLPs)
+    - Activation functions and Backpropagation
+    - Learned representations and Word Embeddings (Word2Vec)
+    - Sentence Embeddings (Concatenation, Autoencoders, Pooling)
     
 
 ### 3. MLOps
