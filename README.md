@@ -56,7 +56,23 @@ Deep dive into the underlying architecture of modern LLMs.
     - Activation functions and Backpropagation
     - Learned representations and Word Embeddings (Word2Vec)
     - Sentence Embeddings (Concatenation, Autoencoders, Pooling)
-    
+
+* [Sequences, Tokenization, Attention](2_LLM_Architecture/Sequences_Tokenization_Attention.md)
+    - Standardization and Pre-processing
+    - Character-Level vs. Word-Level Tokenization
+    - Subword Tokenization (BPE, WordPiece, SentencePiece)
+    - Domain-Specific Tokenization in Healthcare and Hebrew
+    - Recurrent Neural Networks (RNN) and Sequential Data
+    - RNN Architectures: Acceptors, Transducers, and Encoder-Decoders
+
+* [Transformers and LLMs](2_LLM_Architecture/Transformers_and_LLMs.md)
+    - Contextualized vs. Static Embeddings
+    - The Transformer Architecture: Encoder and Decoder
+    - Self-Attention and Multi-Head Attention
+    - Training "Tricks": Skip Connections, Normalization, and Dropout
+    - Positional Encodings
+    - LLM Architectures: Encoder-Only, Decoder-Only, and Encoder-Decoder
+    - Inference Techniques: Top-K, Top-P, and Temperature
 
 ### 3. MLOps
 Best practices for deploying, monitoring, and maintaining machine learning models in production.

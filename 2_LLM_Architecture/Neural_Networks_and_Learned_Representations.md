@@ -44,3 +44,5 @@
 - **Loss of structural order:** Simple methods like pooling lose the structural order of words in a sentence, an issue that is ultimately resolved by moving to sequential models like Transformers.
 
 ***
+
+### 👉 Next: [Neural Networks and Learned Representations](../2_LLM_Architecture/Sequences_Tokenization_Attention.md)
