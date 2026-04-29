@@ -71,3 +71,6 @@ meets a threshold P.
 - Temperature: A parameter that divides logits before softmax to smooth the
 distribution; higher temperature increases variation/creativity, while lower temperature
 makes the output more robust and deterministic.
+
+
+[Interactive Transformer Explanation](https://poloclub.github.io/transformer-explainer/)
