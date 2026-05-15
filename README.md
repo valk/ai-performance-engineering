@@ -74,6 +74,22 @@ Deep dive into the underlying architecture of modern LLMs.
     - LLM Architectures: Encoder-Only, Decoder-Only, and Encoder-Decoder
     - Inference Techniques: Top-K, Top-P, and Temperature
 
+* [LLM Training](2_LLM_Architecture/LLM_Training.md)
+    - LLM Training Phases
+    - Transformer Architectures
+    - Training Mechanics: Data & Loss
+    - Scaling Laws
+    - Why Fine-tune?
+    - Parameter-Efficient Fine-Tuning (PEFT)
+    - LoRA (Low-Rank Adaptation)
+    - QLoRA: Quantized Efficiency
+
+* [More than LLMs](2_LLM_Architecture/More_than_LLMs.md)
+    - Efficient LLMs at Inference Time
+    - New LLM Architectures
+    - Deployment Trends: SLMs & Parallelism
+    - Summary Table: Optimization Tradeoffs
+
 ### 3. MLOps
 Best practices for deploying, monitoring, and maintaining machine learning models in production.
 
