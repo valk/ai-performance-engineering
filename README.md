@@ -36,7 +36,7 @@ Explore how to transition from raw machine learning models to functional AI-driv
 
 ### 2. LLM Architecture
 Deep dive into the underlying architecture of modern LLMs.
-    
+
 *   [LLM Architecture - AI and LLM Intro](2_LLM_Architecture/AI_and_LLM_Intro.md)
     - Intro and Generative Al Landscape
     - Types of ML
@@ -93,11 +93,23 @@ Deep dive into the underlying architecture of modern LLMs.
 ### 3. MLOps
 Best practices for deploying, monitoring, and maintaining machine learning models in production.
 
+*   **[E2E ML Pipelines and Infrastructure Case Study](3_MLOps/E2E_ML_Pipelines_and_Infrastructure_Case_Study.md)**: This module covers: * Designing end-to-end ML pipelines. * Infrastructure considerations for scalable ML deployments. * Monitoring and maintaining deployed models.
+
+*   **[Vector Databases and Storage Optimization for ML](3_MLOps/Vector_Databases_and_Storage_Optimization_for_ML.md)**: This module covers: * Vector database architectures. * Storage optimization strategies for machine learning workloads. * Query performance and scalability.
+
+*   **[LLM Evaluations and Agent Metrics](3_MLOps/LLM_Evaluations_and_Agent_Metrics.md)**: This module covers: * Metrics for evaluating large language models. * Assessment techniques for AI agents. * Benchmarking methodologies.
+
 ### 4. Performance Engineering
 Techniques for optimizing model inference, reducing latency, and managing compute resources efficiently.
 
+*   **[Speculative Decoding](4_Performance_Engineering/Speculative_Decoding.md)**: This module covers: * Speculative decoding techniques. * Inference optimizations. * Real-world performance gains.
+
+*   **[Transformer Inference and Engine Optimizations](4_Performance_Engineering/Transformer_Inference_and_Engine_Optimizations.md)**: This module covers: * Efficient transformer inference methods. * Engine optimizations for latency reduction. * Hardware considerations for inference acceleration.
+
 ### 5. AI Model Finetuning with RL
 Advanced topics in model refinement using Reinforcement Learning.
+
+*   **[Reinforcement Learning in the LLM Field](5_AI_model_finetuning_with_RL/Reinforcement_Learning_in_the_LLM_Field.md)**: This module covers: * RL fundamentals in LLM fine-tuning. * Reward modeling for language generation. * Advanced RL techniques like PPO for LLM alignment.
 
 ## Colabs
 

@@ -1,0 +1,31 @@
+## Low-Level PyTorch Compilations & CUDA Graphs
+
+### Agenda
+- CPU Launch Overhead vs. Core Math Execution
+- Eager Execution Mode Performance Tax
+- torch.compile Fundamentals & FX Graph Splitting
+- Identifying and Troubleshooting Graph Breaks
+- Manual CUDA Graphs Capture and Replay Framework
+- Static Buffer Constraints and VRAM Trade-offs
+
+## The CPU Launch Overhead Tax
+- At low batch sizes (specifically batch size 1), a sequential autoregressive decode loop fires off hundreds of individual GPU kernels on the hot path.
+- Because these individual tensor operations execute almost instantly, the absolute generation speed becomes entirely bottlenecked by the CPU's time spent prepping and dispatching driver commands, rather than raw GPU memory bandwidth or FLOP capacity.
+
+## Compilation with torch.compile
+- Standard PyTorch eager mode forces a hardware sync and isolated round-trip launch for every line of code.
+- **torch.compile** intercepts eager execution by tracing operations into an intermediate FX data graph using TorchDynamo. It passes this representation to TorchInductor, which applies compiler loop optimizations and fuses multiple isolated math steps into single, massive kernels.
+
+## Eradicating Graph Breaks
+A compilation routine drops into fallback eager code whenever it encounters constructs it cannot statically track. Key offenders include:
+- **Host Synchronizations via `.item()`**: Calling `.item()` on a GPU tensor forces the CPU loop to freeze completely. The host processor sits idle waiting across the physical PCIe bus for the asynchronous GPU streams to finish calculations, entirely killing compilation gains.
+- **Python-side Data Control Flow**: `if` statement evaluations that branch directly based on numerical data locked inside an active tensor array require fallback switching.
+- **Hot-path Side Effects**: Placing tracking steps such as raw native `print()` operations inside a deep optimization loop forces a permanent graph break.
+
+## Stream Recording: CUDA Graphs
+- To achieve peak speedups, engineers deploy **CUDA Graphs** to bypass kernel queueing entirely.
+- During an initial warmup run on a dedicated side-stream, the hardware records the precise, sequential execution path of the compiled graph. The host then replays the entire macro-block as a single unified command, compressing microsecond CPU launch gaps.
+- **The Constraints**: CUDA graphs dictate strict limits. They enforce frozen, fixed tensor shapes, require permanent static memory block addresses, and fail if memory-overwriting collisions occur within the static data stream.
+
+***
+👉 Next in module: [Multimodal Architectures and Vision Models](Multimodal_Vision_Transformers.md)
