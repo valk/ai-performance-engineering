@@ -93,23 +93,65 @@ Deep dive into the underlying architecture of modern LLMs.
 ### 3. MLOps
 Best practices for deploying, monitoring, and maintaining machine learning models in production.
 
-*   **[E2E ML Pipelines and Infrastructure Case Study](3_MLOps/E2E_ML_Pipelines_and_Infrastructure_Case_Study.md)**: This module covers: * Designing end-to-end ML pipelines. * Infrastructure considerations for scalable ML deployments. * Monitoring and maintaining deployed models.
+*   **[E2E ML Pipelines and Infrastructure Case Study](3_MLOps/E2E_ML_Pipelines_and_Infrastructure_Case_Study.md)**: This module covers:
+    *   Pipeline Engines & Orchestration: The transition from manual scripts to Directed Acyclic Graphs (DAGs).
+    *   Apache Airflow In-Depth: Core components, deployment modes, and programmatic configuration.
+    *   ML vs. Data Engineering Workloads: Specialized modular blocks within production systems.
+    *   Nebius R&D Infrastructure Case Study: Multi-region GPU computing, preemption strategies, observability configurations, and managing shared research clusters.
 
-*   **[Vector Databases and Storage Optimization for ML](3_MLOps/Vector_Databases_and_Storage_Optimization_for_ML.md)**: This module covers: * Vector database architectures. * Storage optimization strategies for machine learning workloads. * Query performance and scalability.
+*   **[Vector Databases and Storage Optimization for ML](3_MLOps/Vector_Databases_and_Storage_Optimization_for_ML.md)**: This module covers:
+    *   **Part 1: Vector Databases**
+        *   Vector Database Basics & RAG Architecture
+        *   Embeddings & Distance/Similarity Metrics
+        *   Approximate Nearest Neighbor (ANN) Search & Indexing Algorithms
+        *   Production Considerations & Life-Cycle Management
+        *   Product Evaluation Matrix
+    *   **Part 2: Storage Architecture for ML**
+        *   Why Storage Performance Impacts GPU Optimization
+        *   Storage Tiers in Cloud Data Centers
+        *   Specialized Workloads: Datasets, Checkpointing, and Inference Weights
+        *   Storage Benchmarking (IOPS, Block Size, Bandwidth) and Anti-patterns
 
-*   **[LLM Evaluations and Agent Metrics](3_MLOps/LLM_Evaluations_and_Agent_Metrics.md)**: This module covers: * Metrics for evaluating large language models. * Assessment techniques for AI agents. * Benchmarking methodologies.
+*   **[LLM Evaluations and Agent Metrics](3_MLOps/LLM_Evaluations_and_Agent_Metrics.md)**: This module covers:
+    *   Overview of the LLM Evaluation Problem
+    *   Use-Case Dependent Metrics Design
+    *   The Four Core Dimensions of LLM Metrics
+    *   Context Length and Reasoning Constraints
+    *   Hands-on Evaluation: Hallucination/Faithfulness Testing with Llama 3.3
+    *   Inconsistencies and Ground Truth Realities
+    *   Introduction to Agent Evaluation
 
 ### 4. Performance Engineering
 Techniques for optimizing model inference, reducing latency, and managing compute resources efficiently.
 
-*   **[Speculative Decoding](4_Performance_Engineering/Speculative_Decoding.md)**: This module covers: * Speculative decoding techniques. * Inference optimizations. * Real-world performance gains.
+*   **[Speculative Decoding](4_Performance_Engineering/Speculative_Decoding.md)**: This module covers:
+    *   Introduction to Inference Optimization & Performance Economics
+    *   Target vs. Draft Model Terminology
+    *   Step-by-Step Speculative Decoding Algorithm
+    *   Acceptance Criteria and Probability Corrections
+    *   Industry Benchmarks and Practical Viability
+    *   Live-Coding Lab Setup
 
-*   **[Transformer Inference and Engine Optimizations](4_Performance_Engineering/Transformer_Inference_and_Engine_Optimizations.md)**: This module covers: * Efficient transformer inference methods. * Engine optimizations for latency reduction. * Hardware considerations for inference acceleration.
+*   **[Transformer Inference and Engine Optimizations](4_Performance_Engineering/Transformer_Inference_and_Engine_Optimizations.md)**: This module covers:
+    *   Inference Engine Ecosystem (Beyond model.forward)
+    *   Memory Pressure Layout: Weights, Activations, and KV Cache
+    *   High-Level Mechanics: Prefill vs. Decode Phases
+    *   Key Performance Metrics: TTFT, Tapot, ITL, and Goodput
+    *   PagedAttention (vLLM Engine) Memory Architecture
+    *   Batching Strategies: Static, Dynamic, and Continuous Batching
+    *   CPU Scheduling, Preemption, and Prefix Caching
 
 ### 5. AI Model Finetuning with RL
 Advanced topics in model refinement using Reinforcement Learning.
 
-*   **[Reinforcement Learning in the LLM Field](5_AI_model_finetuning_with_RL/Reinforcement_Learning_in_the_LLM_Field.md)**: This module covers: * RL fundamentals in LLM fine-tuning. * Reward modeling for language generation. * Advanced RL techniques like PPO for LLM alignment.
+*   **[Reinforcement Learning in the LLM Field](5_AI_model_finetuning_with_RL/Reinforcement_Learning_in_the_LLM_Field.md)**: This module covers:
+    *   Traditional Pipeline: Pre-training vs. Supervised Fine-Tuning (SFT)
+    *   Limitations and Objective Mismatch of SFT
+    *   Core Reinforcement Learning Setup for Transformers
+    *   RLHF vs. Verifiable Reinforcement Learning (RLVR)
+    *   The 3 Pillars of Reinforcement Learning From Human Feedback
+    *   Reward Modeling, Sigmoid-Log Losses, and KL Regularization
+    *   PPO Pipeline Heavy Infrastructure vs. Direct Policy Optimization (DPO)
 
 ## Colabs
 
