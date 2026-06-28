@@ -34,8 +34,7 @@ To optimize behaviors directly rather than mimicking strings, text generation is
 
 ## Reward Model Fitting Loss Mechanics
 The standard reward network uses a binary cross-entropy formulation over paired preference data:
-$$mathcal{L}_{RM}(theta) = -mathbb{E}_{(x, y_w, y_l) sim D} left[ log sigma left( r_theta(x, y_w) - r_theta(x, y_l) right) right]$$
-- If the network ranks the chosen winning text $y_w$ higher than the bad answer output $y_l$, the scalar gap expands cleanly, reducing the overall penalty.
+$$\mathcal{L}_{RM}(\theta) = -\mathbb{E}_{(x, y_w, y_l) \sim D} \left[ \log \sigma \left( r_\theta(x, y_w) - r_\theta(x, y_l) \right) \right]$$ - If the network ranks the chosen winning text $y_w$ higher than the bad answer output $y_l$, the scalar gap expands cleanly, reducing the overall penalty.
 - If the network places a higher weight value on the lower-ranked response, the score becomes negative, resulting in a steep loss penalty.
 
 ## The Vulnerability of Reward Hacking and KL Regularization
